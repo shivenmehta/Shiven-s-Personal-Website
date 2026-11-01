@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiven's Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Left Navigation Bar -->
+    <section class = "navigation"> <!-- This is the left navigation bar, which will be fixed on the left side of the page and will contain links to different sections of the portfolio.-->
+        <div class = "container">
+            <!-- Name/Logo-->
+            <div class = "navheader"> <!-- Navigation Section Header -->
+                <a class = "name" href = "../index.html">Shiven Mehta</a>
+                <a href="https://www.linkedin.com/in/shiven-mehta-4a0804269/">
+                    <img class = "linkedin-logo" src="../images/linkedin.png" alt="Linkedin Logo">
+                </a>
+            </div>
+
+            <!-- Navigation Section Dividing Line -->
+            <div class="navheader-divider"></div>
+        
+            <!-- Navigation Bar Section Links -->
+             <nav class="navlinks">
+                <a class="navlink" href="../about-me.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                    About Me
+                </a>
+                <a class="navlink" href="../resume.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+                    Resume
+                </a>
+                <a class="navlink" href="../career-goals.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+                    Career Goals
+                </a>
+                <a class="navlink" href="../projects.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+                    Projects
+                </a>
+            </nav>
+            
+        </div>
+    </section>
+
+     <!-- Main Content -->
+    <main class="content">
+        <section class="climaquant">
+
+            <!-- Header -->
+            <div class="climaquant-header">
+                <div class="project-meta">
+                    <span class="project-year-badge">2026</span>
+                    <span class="project-tag-badge">Full Stack</span>
+                </div>
+                <h2 class="section-label">ClimaQuant</h2>
+                <p class="project-subtitle">A climate-adjusted stock options pricing platform bridging natural and economic variability.
+                    This project was developed in collaboraion with two other students at Georgia Tech, Abhinav Sharma and Emily Li, as part of our submission for the
+                    Hacklytics Hackathon 2026.
+                </p>
+            </div>
+
+            <div class="climaquant-divider"></div>
+
+            <!-- Overview -->
+            <div class="climaquant-block">
+                <h3 class="block-label">Overview</h3>
+                <p class="block-text">The goal of this project is to create an innovative way of interacting with the financial world. We do this through a creative solution that integrates climate data into stock option trading strategies within a website anyone can use as a tool. By uniting climate data with financial data, we seek to break the barriers separating natural variability from economical variability. After all, as digital technology and AI further entrench data from human systems, it is imperative we always account for the natural systems upon which these human systems rely.</p>
+            </div>
+
+            <div class="climaquant-divider"></div>
+
+            <!-- What are Stock Options -->
+            <div class="climaquant-block">
+                <h3 class="block-label">What are Stock Options?</h3>
+                <p class="block-text">Imagine you're a trader hoping to make significant money. Stock options let you buy a stock for a fixed price in the future — protecting you from risk while preserving upside. For example, you negotiate with a company to buy a $100 stock at a set strike price (K) in one year. To compensate for potential gains they'd miss out on, they charge you an upfront option price (C), calculated using the Black-Scholes equation:</p>
+                <div class="formula-card">
+                    <p class="formula-vars">σ = volatility (std. deviation of log returns) &nbsp;·&nbsp; r = risk-free rate &nbsp;·&nbsp; d₁ = deviation of current price from strike &nbsp;·&nbsp; d₂ = expected future log price vs strike &nbsp;·&nbsp; N() = cumulative normal distribution</p>
+                </div>
+            </div>
+
+            <div class="climaquant-divider"></div>
+
+            <!-- What We Built -->
+            <div class="climaquant-block">
+                <h3 class="block-label">What We Built</h3>
+                <p class="block-text">We developed an application that allows users to calculate stock option pricing under climate-based and nonclimate-based scenarios. Users can vary strike price, maturation period, and the risk-free rate (r) to visualize different scenarios across major companies spanning energy, food and agriculture, and retail. We implemented Black-Scholes option-pricing using company stock data with climate-enrichment, before then coupling volatility with climate variables (and implementing autoregression) and interpreting and comparing the outputs of each. SphinxAI was a crucial component of our backend in terms of creating sophisticated, insightful visualizations of key economic trends. For example, absolute average percent error for option prices was one metric analyzed. This parameter measures the average change between the stock price at the time of maturation and the strike price plus the calculated accumulation of the option price. The closer this is to zero, the more “accurate” the option price “prediction”.</p>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </span>
+                        <span class="feature-title">Executive Dashboard</span>
+                        <span class="feature-desc">Compares climate vs. non-climate volatility and option pricing across all companies.</span>
+                        
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </span>
+                        <span class="feature-title">Options Calculator</span>
+                        <span class="feature-desc">Dynamically calculate option prices with adjustable risk-free rate, maturation period, and strike price.</span>
+                    
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </span>
+                        <span class="feature-title">Research Section</span>
+                        <span class="feature-desc">Full data visualizations including AAPE analysis comparing climate-adjusted vs. standard pricing accuracy.</span>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="climaquant-divider"></div>
+
+            <!-- Photo Slider -->
+            <div class="climaquant-block">
+                <h3 class="block-label">Screenshots</h3>
+                <div class="photo-slider">
+                    <button class="slider-btn prev" onclick="moveSlide(-1)">&#8592;</button>
+                    <div class="slider-track">
+                        <img class="slide active" src="../images/dashboard.png" alt="Executive Dashboard">
+                        <img class="slide" src="../images/calculator.png" alt="Options Calculator">
+                        <img class="slide" src="../images/research.png" alt="Research Section">
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+
+            <div class="climaquant-divider"></div>
+
+            <!-- Tech Stack -->
+            <div class="climaquant-block">
+                <h3 class="block-label">Data & Technology</h3>
+                <p class="block-text">Backend data was sourced from Stooq (stock market) and NOAA (heating/cooling degree days, Palmer Z Drought Index). We implemented Black-Scholes pricing with climate-enriched volatility, autoregression, and SphinxAI for sophisticated trend visualizations. ClaudeAI was instrumental in frontend formatting, styling, and backend integration.</p>
+            </div>
+
+        </section>
+    </main>
+
+<script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function goToSlide(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = n;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    function moveSlide(dir) {
+        let next = (current + dir + slides.length) % slides.length;
+        goToSlide(next);
+    }
+</script>
+
+</body>
+</html>

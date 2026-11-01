@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiven's Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Left Navigation Bar -->
+    <section class = "navigation"> <!-- This is the left navigation bar, which will be fixed on the left side of the page and will contain links to different sections of the portfolio.-->
+        <div class = "container">
+            <!-- Name/Logo-->
+            <div class = "navheader"> <!-- Navigation Section Header -->
+                <a class = "name" href = "../index.html">Shiven Mehta</a>
+                <a href="https://www.linkedin.com/in/shiven-mehta-4a0804269/">
+                    <img class = "linkedin-logo" src="../images/linkedin.png" alt="Linkedin Logo">
+                </a>
+            </div>
+
+            <!-- Navigation Section Dividing Line -->
+            <div class="navheader-divider"></div>
+        
+            <!-- Navigation Bar Section Links -->
+             <nav class="navlinks">
+                <a class="navlink" href="../about-me.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                    About Me
+                </a>
+                <a class="navlink" href="../resume.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+                    Resume
+                </a>
+                <a class="navlink" href="../career-goals.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+                    Career Goals
+                </a>
+                <a class="navlink" href="../projects.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+                    Projects
+                </a>
+            </nav>
+            
+        </div>
+    </section>
+
+     <!-- Main Content -->
+    <main class="content">
+        <section class="lock">
+
+            <!-- Header -->
+            <div class="lock-header">
+                <div class="project-meta">
+                    <span class="project-year-badge">2026</span>
+                    <span class="project-tag-badge">Circuits/Digital Design</span>
+                </div>
+                <h2 class="section-label">Digital Combinational Lock (Discovery Project)</h2>
+                <p class="project-subtitle">A harware-based combinational logic that was designed and put together by pure electronic circuit elements and discrete logic-based ICs</p>
+            </div>
+
+            <div class="lock-divider"></div>
+
+            
+            <!-- Overview -->
+            <div class="lock-block">
+                <h3 class="block-label">Overview</h3>
+                <p class="block-text">After taking ECE 2020, Georgia Tech's Digital System Design class during my first semester as a college student, I was amazed by how fundamental digital design is to everything, from consumer electronics to modern computing. 
+                    Thus, I wanted to extend the concepts I had learned in the class by applying applying both combinational and sequential logic to build a real working combination lock from discrete logic ICs. 
+                    I thought it was a challenging, but manageable project that used the theory covered in class and expanded it to the next level. While the actual circuit is a work in progress, I have successfully implemented the core memory management and display elements, which I will walk through below.
+                    </p>
+                <p class="block-text">This project also introduced me to unexpected challenges that I never would have encountered if I never tried to put my theory into practice. These issues spanned from signal debouncing, power and current management, and most important, circuit organization.</p>
+            </div>
+
+            <div class="lock-divider"></div>
+
+            <!-- Hardware Design Stages -->
+            <div class="lock-block">
+                <h3 class="block-label">Circuit Design Plan</h3>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <span class="feature-title">Input Memory Management</span>
+                        <span class="feature-desc">Converts decimal keypad input into binary and manages input storage for both display selection and password handling.</span>
+                    </div>
+                    <div class="feature-card">  
+                        <span class="feature-title">Display Selection</span>
+                        <span class="feature-desc">Handles clock control logic, circuit timing, and 7-segment decoder/display logic to accurately render user input on screen.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-title">Password Memory Management</span>
+                        <span class="feature-desc">Manages password storage with support for a new password button, a reset option for unset passwords, and comparator logic for password verification.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class = "feature-title">System/State Control</span>
+                        <span class = "feature-desc">A Finite State Machine governs when a password can be accepted and clocked into memory, along with reset handling for cases where no password has been set.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lock-divider"></div>
+
+            <!-- Overall Schematic -->
+            <div class = "lock-block"> 
+                <h3 class = "block-label">Completed Digital Logic Schematic</h3>
+                <p class = "block-text">A fully functional simulation of the combinational digital lock, implemented on the CircuitSimulator.js platform.</p>
+                <img class="lock-schematic" src="../images/digital_lock.png" alt="Robot V1 Photo 1">
+            </div>
+
+            <div class="lock-divider"></div>
+
+            <!-- ICs/Digital Logic Elements Used -->
+            <div class = "lock-block">
+                <h3 class = "block-label">Materials list for the Digital ICs and Circuit Elements needed for this project</h3>
+                <ul class = materials-text>
+                    <li>12-13 Push Buttons</li>
+                    <li>1 x 10-to-4 Priority Encoder</li>
+                    <li>2 x Hex Inverter ICs</li>
+                    <li>1 x 4-bit D Latch</li>
+                    <li>1 x JK Flip-Flop</li>
+                    <li>5 x 4-bit Flip-Flops</li>
+                    <li>2 x 7-Segment Decoders</li>
+                    <li>2 x 7-Segment Displays</li>
+                    <li>1 x 8-bit Comparator</li>
+                    <li>2-3 x OR Gate ICs</li>
+                    <li>2-3 x AND Gate ICs</li>
+                    <li>Diodes (a lot)</li>
+                    <li>Wires (as needed)</li>
+                    <li>Resistors (as needed)</li>
+                </ul>
+            </div>
+
+            <div class="lock-divider"></div>
+
+            <div class = "lock-block">
+                <h3 class = "block-label">Project Demo</h3>
+                <p class = "block-text">A full project demo of the current circuit implementation, showcasing part of the digital lock in action. The build is still in progress, but the majority of the core functionality is working.</p>
+                <video class="lock-demo" controls>
+                    <source src="../images/lock-demo.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+        
+        </section>
+    </main>
+
+<!-- Java Script for Robot Photo Sliders-->
+<script>
+    const sliders = {
+        v1: { current: 0 },
+        v2: { current: 0 },
+        v3: { current: 0 }
+    };
+
+    function getSliderElements(key) {
+        const allSliders = document.querySelectorAll('.photo-slider');
+        const allDotGroups = document.querySelectorAll('.slider-dots');
+        const index = key === 'v1' ? 0 : key === 'v2' ? 1 : 2;
+        return {
+            slides: allSliders[index].querySelectorAll('.slide'),
+            dots: allDotGroups[index].querySelectorAll('.dot')
+        };
+    }
+
+    function goToSlide(key, n) {
+        const { slides, dots } = getSliderElements(key);
+        slides[sliders[key].current].classList.remove('active');
+        dots[sliders[key].current].classList.remove('active');
+        sliders[key].current = n;
+        slides[sliders[key].current].classList.add('active');
+        dots[sliders[key].current].classList.add('active');
+    }
+
+    function moveSlide(key, dir) {
+        const { slides } = getSliderElements(key);
+        const next = (sliders[key].current + dir + slides.length) % slides.length;
+        goToSlide(key, next);
+    }
+</script>
+
+</body>
+</html>

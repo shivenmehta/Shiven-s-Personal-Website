@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiven's Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Left Navigation Bar -->
+    <section class = "navigation"> <!-- This is the left navigation bar, which will be fixed on the left side of the page and will contain links to different sections of the portfolio.-->
+        <div class = "container">
+            <!-- Name/Logo-->
+            <div class = "navheader"> <!-- Navigation Section Header -->
+                <a class = "name" href = "../index.html">Shiven Mehta</a>
+                <a href="https://www.linkedin.com/in/shiven-mehta-4a0804269/">
+                    <img class = "linkedin-logo" src="../images/linkedin.png" alt="Linkedin Logo">
+                </a>
+            </div>
+
+            <!-- Navigation Section Dividing Line -->
+            <div class="navheader-divider"></div>
+        
+            <!-- Navigation Bar Section Links -->
+             <nav class="navlinks">
+                <a class="navlink" href="../about-me.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                    About Me
+                </a>
+                <a class="navlink" href="../resume.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+                    Resume
+                </a>
+                <a class="navlink" href="../career-goals.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+                    Career Goals
+                </a>
+                <a class="navlink" href="../projects.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+                    Projects
+                </a>
+            </nav>
+            
+        </div>
+    </section>
+
+     <!-- Main Content -->
+    <main class="content">
+        <section class="robot">
+
+            <!-- Header -->
+            <div class="robot-header">
+                <div class="project-meta">
+                    <span class="project-year-badge">2025</span>
+                    <span class="project-tag-badge">Embedded Systems</span>
+                    <span class="project-tag-badge">Robotics</span>
+                </div>
+                <h2 class="section-label">Omnidirectional Robot with PID Motion Control</h2>
+                <p class="project-subtitle">A mecanum-wheel robot designed, fabricated, and programmed to autonomously navigate a maze under time constraints for Science Olympiad.</p>
+            </div>
+
+            <div class="robot-divider"></div>
+
+            <!-- Overview -->
+            <div class="robot-block">
+                <h3 class="block-label">Overview</h3>
+                <p class="block-text">As part of my school's Science Olympiad team, my partner and I designed, fabricated, and programmed a robot to navigate a maze under strict time constraints. The challenge required precise autonomous movement, so we built the entire system from scratch: 3D printing the chassis, using stepper motors with mecanum wheel drive for omnidirectional movement, and implementing a PID feedback loop using IMU data for accurate heading correction.</p>
+                <p class="block-text">The robot was programmed in C++ using the Arduino IDE. The project achieved top-five finishes out of 50+ teams at both the Stanford Invitational and NorCal Regionals.</p>
+            </div>
+
+            <div class="robot-divider"></div>
+
+            <!-- Hardware -->
+            <div class="robot-block">
+                <h3 class="block-label">Hardware & Design</h3>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                        </span>
+                        <span class="feature-title">3D Printed Chassis</span>
+                        <span class="feature-desc">Custom-designed and 3D printed chassis built to house all electronics and motors in a compact, competition-ready form factor.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        </span>
+                        <span class="feature-title">Mecanum Wheel Drive</span>
+                        <span class="feature-desc">Four mecanum wheels driven by stepper motors enable true omnidirectional movement — forward, sideways, and diagonal — without rotating the chassis.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </span>
+                        <span class="feature-title">IMU Sensor</span>
+                        <span class="feature-desc">An MPU6050 IMU provides real-time gyroscope angle data used by the PID controller to detect and correct heading drift during movement.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="robot-divider"></div>
+
+            <!-- Version 1: Stepper Motor Code -->
+            <div class="robot-block">
+                <h3 class="block-label">Version 1 — Stepper Motor Maze Navigation</h3>
+                <p class="block-text">The first version of the robot used the AccelStepper library to drive four stepper motors with precise step counts, allowing the robot to follow a hardcoded sequence of forward, backward, and rotation commands to navigate the maze. Movement was converted from centimeters to motor steps using the wheel diameter, circumference, and microstepping factor.</p>
+                <p class="block-text">A binary search algorithm was implemented to automatically adjust the robot's max speed so that the total path time matched a desired target time — useful for optimizing within the competition's time limit. The robot also monitored battery voltage on startup and indicated low battery via an LED.</p>
+                <div class="code-highlights">
+                    <div class="code-highlight-card">
+                        <span class="highlight-label">Step Calculation</span>
+                        <span class="highlight-desc">Converts cm distances to motor steps using wheel circumference and microstepping factor (4x), with separate step counts per wheel for omnidirectional movement.</span>
+                    </div>
+                    <div class="code-highlight-card">
+                        <span class="highlight-label">Speed Optimization</span>
+                        <span class="highlight-desc">Binary search across speeds to find the accurate speed that completes the full command sequence at  the target time.</span>
+                    </div>
+                    <div class="code-highlight-card">
+                        <span class="highlight-label">Command Sequencer</span>
+                        <span class="highlight-desc">A hardcoded 2D string array of {type, value} command pairs (forward, backward, rotate) is executed sequentially, with a button trigger to start the run.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version 1 Photo Slider 1384 x 1132 -->
+            <div class="robot-block">
+                <h3 class="block-label">Version 1 Robot</h3>
+                <div class="photo-slider">
+                    <button class="slider-btn prev" onclick="moveSlide('v1', -1)">&#8592;</button>
+                    <div class="slider-track">
+                        <img class="slide active" src="../images/robot-v1-1.png" alt="Robot V1 Photo 1">
+                        <img class="slide" src="../images/robot-v1-2.png" alt="Robot V1 Photo 2">
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlide('v1', 1)">&#8594;</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide('v1', 0)"></span>
+                    <span class="dot" onclick="goToSlide('v1', 1)"></span>
+                </div>
+            </div>
+
+            <div class="robot-divider"></div>
+
+            <!-- Version 2: PID Control Code -->
+            <div class="robot-block">
+                <h3 class="block-label">Version 2 — PID Heading Control with DC Motors</h3>
+                <p class="block-text">The second version replaced stepper motors with DC motors and introduced closed-loop PID control using the MPU6050 IMU for real-time heading correction. Rather than relying purely on step counts, the robot continuously reads its gyroscope angle and applies a proportional-integral-derivative correction to keep it on course during straight movements.</p>
+                <p class="block-text">Rotations are handled by a dedicated PID rotation function that spins the robot until the IMU angle matches the target heading within a 2-degree threshold. Motor speeds are dynamically adjusted per side using the correction output, keeping the robot straight even on uneven surfaces.</p>
+                <div class="code-highlights">
+                    <div class="code-highlight-card">
+                        <span class="highlight-label">PID Controller</span>
+                        <span class="highlight-desc">Kp=3.21, Ki=0.0, Kd=0.2 — proportional dominates for fast response, with derivative damping to prevent overshoot near the target angle.</span>
+                    </div>
+                    <div class="code-highlight-card">
+                        <span class="highlight-label">Heading Correction</span>
+                        <span class="highlight-desc">During straight movement, the IMU angle is read every loop iteration and a correction is applied to left/right motor speeds to counteract drift.</span>
+                    </div>
+                    <div class="code-highlight-card">
+                        <span class="highlight-label">Rotation Function</span>
+                        <span class="highlight-desc">rotateUsingPID() runs a closed-loop rotation until the gyroscope angle is within 2 degrees of the target, with integral windup clamped to ±100.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version 2 Photo Slider -->
+            <div class="robot-block">
+                <h3 class="block-label">Version 2 Robot</h3>
+                <div class="photo-slider">
+                    <button class="slider-btn prev" onclick="moveSlide('v2', -1)">&#8592;</button>
+                    <div class="slider-track">
+                        <img class="slide active" src="../images/robot-v2-1.png" alt="Robot V2 Photo 1">
+                        <video class="slide" controls>
+                            <source src="../images/robot-v2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlide('v2', 1)">&#8594;</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide('v2', 0)"></span>
+                    <span class="dot" onclick="goToSlide('v2', 1)"></span>
+                </div>
+            </div>
+
+            <div class="robot-divider"></div>
+
+            <!-- Results -->
+            <div class="robot-block">
+                <h3 class="block-label">Results</h3>
+                <p class="block-text">The robot achieved top-five finishes out of 50+ teams at both the Stanford Invitational and NorCal Regionals. The combination of mecanum wheel omnidirectional drive and IMU-based PID correction proved highly effective for precise autonomous maze navigation under competition time pressure.</p>
+            </div>
+
+            <!-- Results Photo Slider -->
+            <div class="robot-block">
+                <h3 class="block-label">Competition Photos and Videos</h3>
+                <div class="photo-slider">
+                    <button class="slider-btn prev" onclick="moveSlide('v3', -1)">&#8592;</button>
+                    <div class="slider-track">
+                        <img class="slide active" src="../images/results-1.png" alt="Results Photo 1">
+                        <img class="slide" src="../images/results-2.png" alt="Results Photo 2">
+                        <video class="slide" controls>
+                            <source src="../images/results-3.mp4" type="video/mp4">
+                        </video>
+                        <img class="slide" src="../images/results-4.png" alt="Results Photo 4">
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlide('v3', 1)">&#8594;</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide('v3', 0)"></span>
+                    <span class="dot" onclick="goToSlide('v3', 1)"></span>
+                    <span class="dot" onclick="goToSlide('v3', 2)"></span>
+                    <span class="dot" onclick="goToSlide('v3', 3)"></span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+<!-- Java Script for Robot Photo Sliders-->
+<script>
+    const sliders = {
+        v1: { current: 0 },
+        v2: { current: 0 },
+        v3: { current: 0 }
+    };
+
+    function getSliderElements(key) {
+        const allSliders = document.querySelectorAll('.photo-slider');
+        const allDotGroups = document.querySelectorAll('.slider-dots');
+        const index = key === 'v1' ? 0 : key === 'v2' ? 1 : 2;
+        return {
+            slides: allSliders[index].querySelectorAll('.slide'),
+            dots: allDotGroups[index].querySelectorAll('.dot')
+        };
+    }
+
+    function goToSlide(key, n) {
+        const { slides, dots } = getSliderElements(key);
+        slides[sliders[key].current].classList.remove('active');
+        dots[sliders[key].current].classList.remove('active');
+        sliders[key].current = n;
+        slides[sliders[key].current].classList.add('active');
+        dots[sliders[key].current].classList.add('active');
+    }
+
+    function moveSlide(key, dir) {
+        const { slides } = getSliderElements(key);
+        const next = (sliders[key].current + dir + slides.length) % slides.length;
+        goToSlide(key, next);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiven's Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Left Navigation Bar -->
+    <section class = "navigation"> <!-- This is the left navigation bar, which will be fixed on the left side of the page and will contain links to different sections of the portfolio.-->
+        <div class = "container">
+            <!-- Name/Logo-->
+            <div class = "navheader"> <!-- Navigation Section Header -->
+                <a class = "name" href = "../index.html">Shiven Mehta</a>
+                <a href="https://www.linkedin.com/in/shiven-mehta-4a0804269/">
+                    <img class = "linkedin-logo" src="../images/linkedin.png" alt="Linkedin Logo">
+                </a>
+            </div>
+
+            <!-- Navigation Section Dividing Line -->
+            <div class="navheader-divider"></div>
+        
+            <!-- Navigation Bar Section Links -->
+             <nav class="navlinks">
+                <a class="navlink" href="../about-me.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                    About Me
+                </a>
+                <a class="navlink" href="../resume.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+                    Resume
+                </a>
+                <a class="navlink" href="../career-goals.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+                    Career Goals
+                </a>
+                <a class="navlink" href="../projects.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+                    Projects
+                </a>
+            </nav>
+            
+        </div>
+    </section>
+
+     <!-- Main Content -->
+    <main class="content">
+        <section class="tennis">
+
+            <!-- Header -->
+            <div class="tennis-header">
+                <div class="project-meta">
+                    <span class="project-year-badge">2024</span>
+                    <span class="project-tag-badge">Machine Learning</span>
+                </div>
+                <h2 class="section-label">Tennis Shot-Quality Prediction Model</h2>
+                <p class="project-subtitle">An AI-driven model that scores tennis shot quality on a continuous scale using computer vision and gradient boosting.</p>
+            </div>
+
+            <div class="tennis-divider"></div>
+
+            <!-- Overview -->
+            <div class="tennis-block">
+                <h3 class="block-label">Overview</h3>
+                <p class="block-text">One of the most effective ways for players to improve their tennis performance is by analyzing match footage to identify shots that are poorly executed or fail to achieve the intended impact on the opponent. However, reviewing match footage and documenting each point is extremely time consuming, especially for matches that last hours. When estimating the quality of their shots, players have to manually estimate factors like speed, landing position, and impact on opponents. Having an AI driven model perform this process can efficiently automate this analysis and uncover patterns in a player's game.</p>
+                <p class="block-text">This project explores an AI approach to scoring tennis shot quality for individual shots on a continuous scale from zero to ten, utilizing factors such as depth, width, player positions, and speed. By training a highly efficient gradient boosting model (Light GBM) on features extracted from multiple deep learning models, a mean squared error of 0.27, a mean absolute percentage error of 7.31%, and a mean absolute error of 0.44 was achieved.</p>
+            </div>
+
+            <div class="tennis-divider"></div>
+
+            <!-- How It Works -->
+            <div class="tennis-block">
+                <h3 class="block-label">How It Works</h3>
+                <p class="block-text">The pipeline extracts numerical data from four primary models working together to analyze broadcast tennis video:</p>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        </span>
+                        <span class="feature-title">TrackNet CNN</span>
+                        <span class="feature-desc">Tracks the tennis ball frame-by-frame using a heatmap-based deep learning network, achieving 99.8% precision and 96.6% recall.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </span>
+                        <span class="feature-title">Modified TrackNet (Court)</span>
+                        <span class="feature-desc">Detects 14 key court points and applies a homography matrix to standardize all coordinates onto a 2D reference plane.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </span>
+                        <span class="feature-title">Faster R-CNN</span>
+                        <span class="feature-desc">Detects and tracks both players on the court using bounding boxes, providing precise player position coordinates at every frame.</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </span>
+                        <span class="feature-title">CatBoost + Binary Moving Average</span>
+                        <span class="feature-desc">Predicts bounce frames using a pretrained CatBoostRegressor, while a binary moving average model detects hit frames with 90–95% accuracy.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tennis-divider"></div>
+
+            <!-- Results -->
+            <div class="tennis-block">
+                <h3 class="block-label">Results</h3>
+                <p class="block-text">The Light GBM model was trained on 208 labeled shots with an 80-20 train-test split, achieving a mean squared error of 0.27, a mean absolute percentage error of 7.31%, and a mean absolute error of 0.44. The two most important features were ball position X and Y, contributing 22.08% and 22.63% to the model respectively — aligning with the common belief among tennis players that depth and width are the key factors in shot quality.</p>
+                <p class="block-text">The model's heatmap output confirmed that shots targeted at wider and deeper regions of the court yield higher scores, while shots aimed toward the center and shallower areas score lower — a pattern consistent with expert tennis knowledge.</p>
+            </div>
+
+            <div class="tennis-divider"></div>
+
+            <!-- Recognition -->
+            <div class="tennis-block">
+                <h3 class="block-label">Recognition</h3>
+                <p class="block-text">This project was delivered as a 10-page research paper and received recognition at the Synopsys Science Fair, earning an Honorable Mention and the ASEI Award.</p>
+            </div>
+
+            <div class="tennis-divider"></div>
+
+            <!-- Research Paper -->
+            <div class="tennis-block">
+                <h3 class="block-label">Research Paper</h3>
+                <div class="paper-embed-wrapper">
+                    <iframe class="pdf-embed" src="../images/Tennis_Research_Paper.pdf" type="application/pdf"></iframe>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

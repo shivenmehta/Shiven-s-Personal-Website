@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiven's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Left Navigation Bar -->
+    <section class = "navigation"> <!-- This is the left navigation bar, which will be fixed on the left side of the page and will contain links to different sections of the portfolio.-->
+        <div class = "container">
+            <!-- Name/Logo-->
+            <div class = "navheader"> <!-- Navigation Section Header -->
+                <a class = "name" href = "index.html">Shiven Mehta</a>
+                <a href="https://www.linkedin.com/in/shiven-mehta-4a0804269/">
+                    <img class = "linkedin-logo" src="images/linkedin.png" alt="Linkedin Logo">
+                </a>
+            </div>
+
+            <!-- Navigation Section Dividing Line -->
+            <div class="navheader-divider"></div>
+        
+            <!-- Navigation Bar Section Links -->
+             <nav class="navlinks">
+                <a class="navlink" href="about-me.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                    About Me
+                </a>
+                <a class="navlink" href="resume.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+                    Resume
+                </a>
+                <a class="navlink" href="career-goals.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+                    Career Goals
+                </a>
+                <a class="navlink" href="projects.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+                    Projects
+                </a>
+            </nav>
+            
+        </div>
+    </section>
+
+     <!-- Main Content -->
+    <main class="content">
+        <!-- Resume Section -->
+        <section id="projects" class="projects">
+            <div class = "projects-header">
+                <h2 class="section-label">
+                    <a class="projects-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+                        Projects
+                    </a>
+                </h2>
+            </div>
+            <p class="projects-description">Take a look into my latest projects!</p>
+            <!-- Project Card Grid Section-->
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-top">
+                        <span class="project-year">2024</span>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <h3 class="project-title">Tennis Shot-Quality Prediction Model</h3>
+                    <p class="project-desc">Gradient boosting model that predicts shot quality from broadcast video for automated technique feedback.</p>
+                    <a class="project-btn" href="projects/tennis.html">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-top">
+                        <span class="project-year">2025</span>
+                        <span class="project-tag">Robotics</span>
+                    </div>
+                    <h3 class="project-title">Omnidirectional Robot with PID Control</h3>
+                    <p class="project-desc">Mecanum-wheel robot with embedded C++ control software and PID feedback loop using IMU data.</p>
+                    <a class="project-btn" href="projects/robot.html">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-top">
+                        <span class="project-year">2026</span>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <h3 class="project-title">ClimaQuant</h3>
+                    <p class="project-desc">Full-stack platform integrating NOAA climate indicators with equity data for climate-adjusted options pricing.</p>
+                    <a class="project-btn" href="projects/climaquant.html">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-top">
+                        <span class="project-year">2026</span>
+                        <span class="project-tag">Circuits/Digital Design</span>
+                    </div>
+                    <h3 class="project-title">Digital Combinational Lock (Discovery Project)</h3>
+                    <p class="project-desc">Combination lock implemented with pure digital logic - no microcontroller. Built from discrete logic ICs.</p>
+                    <a class="project-btn" href="projects/digital_lock.html">View Project →</a>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
