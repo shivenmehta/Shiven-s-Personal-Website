@@ -1,2 +1,1 @@
-# Large video files — hosted externally, not tracked in git
-images/*.mp4
+# Video files are tracked via Git LFS (see .gitattributes)
